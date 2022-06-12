@@ -38,15 +38,15 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   padding: 2rem;
 }
 
-.logo {
+.header__logo {
   height: 2rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   left: 50%;
   top: 45%;
@@ -61,19 +61,19 @@ body {
   margin-bottom: 3.75rem;
 }
 
-.heading-primary-main,
-.heading-primary-sub {
+.heading-primary--main,
+.heading-primary--sub {
   display: block;
   letter-spacing: 1.1rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   font-size: 3.75rem;
   font-weight: 400;
   animation: fade-in-left 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   font-size: 1.3rem;
   font-weight: 700;
   animation: fade-in-right 1s ease-out;
@@ -128,7 +128,7 @@ body {
   transition: transform 200ms ease-in, box-shadow 200ms ease-in;
 }
 
-.btn-animated {
+.btn--animated {
   animation: fade-in-bottom 1s ease-out 0.75s backwards;
 }
 
@@ -142,7 +142,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
