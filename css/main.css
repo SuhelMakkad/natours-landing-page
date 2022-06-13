@@ -172,6 +172,47 @@ body {
   text-align: center;
 }
 
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.row .col-1 {
+  width: 100%;
+}
+
+.row .col-2 {
+  width: 50%;
+}
+
+.row .col-3 {
+  width: 33.33%;
+}
+
+.row .col-4 {
+  width: 25%;
+}
+
+.row .col-5 {
+  width: 20%;
+}
+
+.row .col-6 {
+  width: 16.66%;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
