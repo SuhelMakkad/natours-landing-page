@@ -332,6 +332,51 @@ body {
           transform: translateY(0);
 }
 
+.composition {
+  position: relative;
+}
+
+.composition:hover .composition__img:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.composition__img {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.composition__img--p1 {
+  left: 0;
+  top: -2px;
+}
+
+.composition__img--p2 {
+  right: 0;
+  top: 20px;
+}
+
+.composition__img--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition__img:hover {
+  -webkit-transform: scale(1.05) translateY(-5px);
+          transform: scale(1.05) translateY(-5px);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: calc(20rem + 20vh) 0 20rem 0;
