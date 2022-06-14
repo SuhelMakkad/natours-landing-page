@@ -282,6 +282,63 @@ body {
   width: 16.66%;
 }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7;
+}
+
+.footer__logo-wrapper {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.footer__logo {
+  width: 15rem;
+}
+
+.footer__navigation {
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: color 200ms ease, ease, text-shadow 200ms ease, -webkit-transform 200ms ease;
+  transition: color 200ms ease, ease, text-shadow 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, color 200ms ease, ease, text-shadow 200ms ease;
+  transition: transform 200ms ease, color 200ms ease, ease, text-shadow 200ms ease, -webkit-transform 200ms ease;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer__copyright {
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+}
+
 .btn, .btn:link, .btn:visited {
   font-size: 1.6rem;
   text-transform: uppercase;
