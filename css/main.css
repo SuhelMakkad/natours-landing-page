@@ -191,7 +191,7 @@ body {
 }
 
 .u-mb-med {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .u-mb-big {
@@ -207,7 +207,7 @@ body {
 }
 
 .u-mt-med {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .u-mt-big {
@@ -568,6 +568,79 @@ body {
   font-weight: 100;
 }
 
+.story {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-size: 1.6rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+
+.story > * {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  background-color: #f7f7f7;
+  -webkit-transform: translateX(-3rem) skewX(12deg);
+          transform: translateX(-3rem) skewX(12deg);
+  overflow: hidden;
+  position: relative;
+}
+
+.story__img {
+  height: 100%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(1.105);
+          transform: translateX(-50%) scale(1.105);
+  -webkit-transition: -webkit-transform 200ms ease-out, -webkit-filter 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out, -webkit-filter 200ms ease-out;
+  transition: transform 200ms ease-out, filter 200ms ease-out;
+  transition: transform 200ms ease-out, filter 200ms ease-out, -webkit-transform 200ms ease-out, -webkit-filter 200ms ease-out;
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, 7.5rem);
+          transform: translate(-50%, 7.5rem);
+  -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
+  opacity: 0;
+}
+
+.story:hover .story__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
+  -webkit-filter: blur(4px) brightness(85%);
+          filter: blur(4px) brightness(85%);
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: calc(20rem + 20vh) 0 20rem 0;
@@ -593,5 +666,10 @@ body {
   background-color: #f7f7f7;
   padding: 20vh 0 15rem 0;
   margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=main.css.map */
