@@ -28,6 +28,11 @@
     background-color: $clr-white;
     color: $clr-grey-dark;
   }
+
+  &--green {
+    background-color: $clr-primary;
+    color: $clr-white;
+  }
 }
 
 .btn-text {
