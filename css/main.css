@@ -576,7 +576,7 @@ body {
   padding-left: 9rem;
   -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.6rem;
   -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);
@@ -641,6 +641,21 @@ body {
           filter: blur(4px) brightness(85%);
 }
 
+.bg-video {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: calc(20rem + 20vh) 0 20rem 0;
@@ -669,7 +684,7 @@ body {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=main.css.map */
