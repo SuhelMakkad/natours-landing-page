@@ -16,7 +16,7 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
-    <div class="navigation">
+    <div class="navigation" id="top">
       <input class="navigation__checkbox" id="navigation-toggle" type="checkbox" />
       <label class="navigation__btn" for="navigation-toggle">
         <span class="navigation__icon"></span>
@@ -41,7 +41,7 @@
           </li>
 
           <li class="navigation__item">
-            <a href="#" class="navigation__link"> Book Now </a>
+            <a href="#book-modal" class="navigation__link"> Book Now </a>
           </li>
         </ul>
       </nav>
@@ -182,7 +182,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$349</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#book-modal" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$549</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#book-modal" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$949</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#book-modal" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -414,5 +414,37 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="book-modal">
+      <div class="modal__content">
+        <div class="modal__left">
+          <img src="/assets/img/nat-8.jpg" class="modal__img" alt="Tour Images" />
+          <img src="/assets/img/nat-9.jpg" class="modal__img" alt="Tour Images" />
+        </div>
+
+        <div class="modal__right">
+          <a href="#top" class="modal__close">&times;</a>
+
+          <h2 class="heading-secondary u-mb-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-mb-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit reiciendis incidunt
+            dolorum consequuntur vel officiis similique provident. Quae iure rem inventore nemo
+            architecto ad quas illo sapiente adipisci dignissimos id reprehenderit ullam a optio,
+            officiis reiciendis cumque sunt dolorem hic, nesciunt soluta, ea repudiandae porro? Quae
+            vel cum ducimus non est nulla molestias veniam, voluptates fugiat! Molestias sunt odio
+            perferendis numquam quaerat esse dolorum repudiandae nostrum consequuntur odit? Earum
+            quaerat aspernatur inventore. Officiis quidem accusamus harum non illum asperiores,
+            repellat repellendus perspiciatis? Soluta aperiam tenetur quod pariatur, laborum qui
+            quos, voluptatibus suscipit laboriosam repellendus eum ipsum dolore in sequi!
+          </p>
+
+          <a href="#" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

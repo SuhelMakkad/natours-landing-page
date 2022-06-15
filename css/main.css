@@ -31,6 +31,7 @@ html {
 
 body {
   color: #777;
+  scroll-behavior: smooth;
 }
 
 @-webkit-keyframes fade-in-left {
@@ -1019,14 +1020,95 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 300ms, opacity 300ms;
+  transition: visibility 300ms, opacity 300ms;
 }
 
 .modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 75%;
-  height: 50rem;
   background-color: #fff;
-  -webkit-box-shadow: 0 2rem 4rem;
-          box-shadow: 0 2rem 4rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: transform 300ms, opacity 300ms;
+  transition: transform 300ms, opacity 300ms, -webkit-transform 300ms;
+}
+
+.modal__left {
+  width: 33.32%;
+}
+
+.modal__right {
+  width: 66.67%;
+  padding: 3rem 5rem;
+}
+
+.modal__img {
+  display: block;
+  width: 100%;
+}
+
+.modal__text {
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  -webkit-column-rule: 1px solid #eee;
+          column-rule: 1px solid #eee;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal:target .modal__content {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__close:link, .modal__close:visited {
+  color: #777;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+  line-height: 1;
+}
+
+.modal__close:link:hover, .modal__close:visited:hover {
+  color: #55c57a;
 }
 
 .section-about {
