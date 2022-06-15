@@ -236,6 +236,80 @@ body {
   margin-top: 10rem !important;
 }
 
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__btn {
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  height: 7rem;
+  width: 7rem;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 200;
+}
+
+.navigation__background {
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 100;
+  -webkit-transform: scale(100);
+          transform: scale(100);
+}
+
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 150;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-size: 250%;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  -webkit-transition: background-position 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+  transition: background-position 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, background-position 300ms ease, color 300ms ease;
+  transition: transform 300ms ease, background-position 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+}
+
+.navigation__link:active, .navigation__link:hover {
+  color: #55c57a;
+  background-position: 100%;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(126, 213, 111, 0.8))), url(/assets/img/hero.jpg);
