@@ -34,11 +34,10 @@
   &__link {
     &:link,
     &:visited {
+      display: inline-block;
       color: inherit;
-
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
       transition: transform 200ms ease, color 200ms ease, ease, text-shadow 200ms ease;
     }
 
