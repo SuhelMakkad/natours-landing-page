@@ -17,6 +17,10 @@
     border-bottom: 3px solid transparent;
     transition: box-shadow 200ms ease, border-bottom 200ms ease;
 
+    @include respond(md) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($clr-black, 0.1);
@@ -54,6 +58,11 @@
   &__radio-group {
     width: 48%;
     display: inline-block;
+
+    @include respond(md) {
+      width: 100%;
+      margin-top: 2rem;
+    }
   }
 
   &__radio-label {

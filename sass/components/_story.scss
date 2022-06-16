@@ -9,8 +9,22 @@
   font-size: $font-size-regular;
   transform: skewX(-12deg);
 
+  @include respond(md) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
   & > * {
     transform: skewX(12deg);
+  }
+
+  @include respond(sm) {
+    transform: skew(0);
+
+    & > * {
+      transform: skewX(0);
+    }
   }
 
   &__shape {
@@ -23,6 +37,10 @@
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     position: relative;
+
+    @include respond(sm) {
+      transform: translateX(-3rem) skew(0);
+    }
   }
 
   &__img {
