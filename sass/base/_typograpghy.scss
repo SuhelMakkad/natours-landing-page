@@ -15,19 +15,28 @@ body {
   &--main,
   &--sub {
     display: block;
-    letter-spacing: 1.1rem;
   }
 
   &--main {
     font-size: 6rem;
     font-weight: 400;
     animation: fade-in-left 1s ease-out;
+    letter-spacing: 3rem;
+
+    @include respond(sm) {
+      letter-spacing: 1.1rem;
+    }
   }
 
   &--sub {
     font-size: 2.1rem;
     font-weight: 700;
     animation: fade-in-right 1s ease-out;
+    letter-spacing: 2rem;
+
+    @include respond(sm) {
+      letter-spacing: 0.6rem;
+    }
   }
 }
 
@@ -43,6 +52,13 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: transform 200ms ease-in, text-shadow 200ms ease-in;
+
+  @include respond(md) {
+    font-size: 3rem;
+  }
+  @include respond(sm) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: scale(1.05);

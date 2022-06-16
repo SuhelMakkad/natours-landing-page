@@ -2,6 +2,16 @@
   display: flex;
   gap: $row-gap;
 
+  @include respond(md) {
+    flex-wrap: wrap;
+  }
+
+  [class^="col-"] {
+    @include respond(md) {
+      width: 100% !important;
+    }
+  }
+
   .col-1 {
     width: 100%;
   }

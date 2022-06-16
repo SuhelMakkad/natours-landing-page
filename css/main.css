@@ -27,6 +27,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   /* 1200px */
   /* 900px */
   /* 1800px */
@@ -167,7 +168,6 @@ body {
 
 .heading-primary--main, .heading-primary--sub {
   display: block;
-  letter-spacing: 1.1rem;
 }
 
 .heading-primary--main {
@@ -175,6 +175,14 @@ body {
   font-weight: 400;
   -webkit-animation: fade-in-left 1s ease-out;
           animation: fade-in-left 1s ease-out;
+  letter-spacing: 3rem;
+  /* 600px */
+}
+
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1.1rem;
+  }
 }
 
 .heading-primary--sub {
@@ -182,6 +190,14 @@ body {
   font-weight: 700;
   -webkit-animation: fade-in-right 1s ease-out;
           animation: fade-in-right 1s ease-out;
+  letter-spacing: 2rem;
+  /* 600px */
+}
+
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.6rem;
+  }
 }
 
 .heading-secondary {
@@ -200,6 +216,20 @@ body {
   transition: text-shadow 200ms ease-in, -webkit-transform 200ms ease-in;
   transition: transform 200ms ease-in, text-shadow 200ms ease-in;
   transition: transform 200ms ease-in, text-shadow 200ms ease-in, -webkit-transform 200ms ease-in;
+  /* 900px */
+  /* 600px */
+}
+
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-secondary:hover {
@@ -447,6 +477,13 @@ body {
 .container {
   max-width: 114rem;
   margin: 0 auto;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .container {
+    max-width: 50rem;
+  }
 }
 
 .row {
@@ -454,6 +491,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 6rem;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.row [class^="col-"] {
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
 }
 
 .row .col-1 {
