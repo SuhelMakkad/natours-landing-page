@@ -258,34 +258,90 @@ body {
 
 .u-mb-small {
   margin-bottom: 1.5rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mb-small {
+    margin-bottom: 1.25rem !important;
+  }
 }
 
 .u-mb-med {
   margin-bottom: 6rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mb-med {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-mb-big {
   margin-bottom: 8rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mb-big {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .u-mb-large {
   margin-bottom: 10rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mb-large {
+    margin-bottom: 8.5rem !important;
+  }
 }
 
 .u-mt-small {
   margin-top: 1.5rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mt-small {
+    margin-top: 1.25rem !important;
+  }
 }
 
 .u-mt-med {
   margin-top: 6rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mt-med {
+    margin-top: 5rem !important;
+  }
 }
 
 .u-mt-big {
   margin-top: 8rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mt-big {
+    margin-top: 6rem !important;
+  }
 }
 
 .u-mt-large {
   margin-top: 10rem !important;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .u-mt-large {
+    margin-top: 8.5rem !important;
+  }
 }
 
 .navigation__checkbox {
@@ -1223,6 +1279,13 @@ body {
   background-color: #f7f7f7;
   padding: calc(20rem + 20vh) 0 20rem 0;
   margin-top: -20vh;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .section-about {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -1233,6 +1296,7 @@ body {
   margin-top: -10rem;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
+  /* 900px */
 }
 
 .section-features > * {
@@ -1240,21 +1304,48 @@ body {
           transform: skewY(7deg);
 }
 
+@media (max-width: 56.25em) {
+  .section-features {
+    padding: 15rem 0;
+  }
+}
+
 .section-tours {
   background-color: #f7f7f7;
-  padding: 20vh 0 15rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .section-tours {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .section-stories {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
   padding: 15rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  /* 900px */
+}
+
+@media (max-width: 56.25em) {
+  .section-book {
+    padding: 10rem 0;
+  }
 }
 
 .book {
