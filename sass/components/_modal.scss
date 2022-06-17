@@ -14,7 +14,9 @@
 
   &__content {
     @include absCenter;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 
     width: 75%;
@@ -30,21 +32,23 @@
   }
 
   &__left {
-    width: 33.32%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: hidden;
+    height: 100%;
   }
 
   &__right {
-    width: 66.67%;
     padding: 3rem 5rem;
   }
 
   &__img {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: width 300ms ease;
+
+    &:hover {
+      width: calc(100% + 2rem);
+    }
   }
 
   &__text {
