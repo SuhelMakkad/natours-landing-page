@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   /* for mozilla */
-  scrollbar-color: $clr-primary $clr-white;
+  scrollbar-color: $clr-primary-dark $clr-white;
   scrollbar-width: thin;
 }
 
@@ -21,12 +21,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $clr-primary;
+  background-color: $clr-primary-dark;
   border-radius: 5px;
 }
 
 ::selection {
-  background-color: $clr-primary;
+  background-color: $clr-primary-dark;
   color: $clr-white;
 }
 

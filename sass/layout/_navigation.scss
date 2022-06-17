@@ -25,7 +25,8 @@
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    background-image: radial-gradient($clr-primary-light, $clr-primary-dark);
+    background-image: radial-gradient(rgba($clr-primary-light, 0.5), rgba($clr-primary-dark, 0.5));
+    backdrop-filter: blur(1px);
     transform: scale(0);
     transition: transform 550ms cubic-bezier(0.86, 0, 0.07, 1);
     z-index: 100;
