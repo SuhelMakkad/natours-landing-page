@@ -16,32 +16,36 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
-    <div class="navigation" id="top">
-      <input class="navigation__checkbox" id="navigation-toggle" type="checkbox" />
-      <label class="navigation__btn" for="navigation-toggle">
+    <div class="navigation" id="nav-menu">
+      <!-- <input class="navigation__checkbox" id="navigation-toggle" type="checkbox" /> -->
+      <div class="navigation__btn" for="navigation-toggle">
         <span class="navigation__icon"></span>
-      </label>
+
+        <a href="#nav-menu" class="navigation__toggle-btn navigation__toggle-btn--open"></a>
+        <a href="#" class="navigation__toggle-btn navigation__toggle-btn--close"></a>
+      </div>
+
       <div class="navigation__background"></div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"> About Natours </a>
+            <a href="#section-about" class="navigation__link"> About Natours </a>
           </li>
 
           <li class="navigation__item">
-            <a href="#" class="navigation__link"> Your Benefits </a>
+            <a href="#section-features" class="navigation__link"> Features </a>
           </li>
 
           <li class="navigation__item">
-            <a href="#" class="navigation__link"> popular tours </a>
+            <a href="#section-tours" class="navigation__link"> Popular Qours </a>
           </li>
 
           <li class="navigation__item">
-            <a href="#" class="navigation__link"> Stories </a>
+            <a href="#section-stories" class="navigation__link"> Stories </a>
           </li>
 
           <li class="navigation__item">
-            <a href="#book-modal" class="navigation__link"> Book Now </a>
+            <a href="#section-book" class="navigation__link"> Book Now </a>
           </li>
         </ul>
       </nav>
@@ -63,7 +67,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text">
           <h2 class="heading-secondary u-mb-big">Exceting tours for adventurous people</h2>
         </div>
@@ -117,7 +121,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row container">
           <div class="col-4 feature-box">
             <i class="feature-box__icon icon-basic-world"></i>
@@ -262,7 +266,7 @@
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="/assets/videos/video.webm" type="video/mpg" />
@@ -316,7 +320,7 @@
         </div>
       </section>
 
-      <section class="section-book">
+      <section class="section-book" id="section-book">
         <div class="container">
           <div class="book">
             <div class="book__form">

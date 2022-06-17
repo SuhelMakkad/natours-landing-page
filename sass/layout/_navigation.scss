@@ -79,15 +79,6 @@
     }
   }
 
-  &__checkbox:checked ~ &__background {
-    transform: scale(100);
-  }
-
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    transform: scale(1);
-  }
-
   &__icon {
     position: relative;
     transition: background-color 200ms;
@@ -117,6 +108,18 @@
     }
   }
 
+  &__toggle-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &--close {
+      display: none;
+    }
+  }
+
   &__btn:hover &__icon {
     &::before {
       top: -1rem;
@@ -127,7 +130,26 @@
     }
   }
 
-  &__checkbox:checked + &__btn &__icon {
+  &:target &__toggle-btn {
+    &--open {
+      display: none;
+    }
+
+    &--close {
+      display: block;
+    }
+  }
+
+  &:target &__background {
+    transform: scale(100);
+  }
+
+  &:target &__nav {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &:target &__btn &__icon {
     background-color: transparent;
 
     &::after {

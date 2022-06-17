@@ -25,10 +25,16 @@
   border-radius: 5px;
 }
 
+::selection {
+  background-color: $clr-primary;
+  color: $clr-white;
+}
+
 html {
   // 62.5% of 16px that is 1rem is 10px
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   @include respond(lg) {
     font-size: 56.25%;
@@ -45,5 +51,4 @@ html {
 
 body {
   color: $clr-grey-dark-1;
-  scroll-behavior: smooth;
 }

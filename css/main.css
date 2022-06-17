@@ -25,9 +25,20 @@
   border-radius: 5px;
 }
 
+::-moz-selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /* 1200px */
   /* 900px */
   /* 1800px */
@@ -53,7 +64,6 @@ html {
 
 body {
   color: #777;
-  scroll-behavior: smooth;
 }
 
 @-webkit-keyframes fade-in-left {
@@ -438,17 +448,6 @@ body {
           transform: translateX(1rem);
 }
 
-.navigation__checkbox:checked ~ .navigation__background {
-  -webkit-transform: scale(100);
-          transform: scale(100);
-}
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 .navigation__icon {
   position: relative;
   -webkit-transition: background-color 200ms;
@@ -480,6 +479,18 @@ body {
   top: 0.8rem;
 }
 
+.navigation__toggle-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation__toggle-btn--close {
+  display: none;
+}
+
 .navigation__btn:hover .navigation__icon::before {
   top: -1rem;
 }
@@ -488,17 +499,36 @@ body {
   top: 1rem;
 }
 
-.navigation__checkbox:checked + .navigation__btn .navigation__icon {
+.navigation:target .navigation__toggle-btn--open {
+  display: none;
+}
+
+.navigation:target .navigation__toggle-btn--close {
+  display: block;
+}
+
+.navigation:target .navigation__background {
+  -webkit-transform: scale(100);
+          transform: scale(100);
+}
+
+.navigation:target .navigation__nav {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.navigation:target .navigation__btn .navigation__icon {
   background-color: transparent;
 }
 
-.navigation__checkbox:checked + .navigation__btn .navigation__icon::after {
+.navigation:target .navigation__btn .navigation__icon::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.navigation__checkbox:checked + .navigation__btn .navigation__icon::before {
+.navigation:target .navigation__btn .navigation__icon::before {
   top: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -900,7 +930,6 @@ body {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   position: relative;
-  /* 900px */
 }
 
 .card:hover .card__side--front {
@@ -1042,7 +1071,7 @@ body {
   font-weight: 100;
 }
 
-@media (max-width: 56.25em) {
+@media (hover: none) {
   .card {
     border-radius: 4px;
     background-color: #fff;
