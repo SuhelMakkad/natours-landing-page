@@ -15,9 +15,14 @@
   &__content {
     @include absCenter;
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+
+    @include respond(md) {
+      grid-template-rows: 100px auto;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
 
     width: 75%;
     background-color: $clr-white;
@@ -58,7 +63,12 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $clr-grey-light-2;
+    text-align: left;
     hyphens: auto;
+
+    @include respond(sm) {
+      column-count: 1;
+    }
   }
 
   &:target {
@@ -83,6 +93,16 @@
       text-decoration: none;
       transition: color 200ms;
       line-height: 1;
+
+      @include respond(md) {
+        display: grid;
+        place-content: center;
+        height: 4rem;
+        width: 4rem;
+        color: $clr-white;
+        background-color: $clr-grey-dark-3;
+        border-radius: 50%;
+      }
 
       &:hover {
         color: $clr-primary;
