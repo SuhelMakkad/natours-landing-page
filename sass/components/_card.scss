@@ -4,11 +4,11 @@
 
   &:hover &__side {
     &--front {
-      transform: rotateY(-180deg);
+      transform: rotateX(90deg);
     }
 
     &--back {
-      transform: rotateY(0deg);
+      transform: rotateX(0deg);
     }
   }
 
@@ -21,13 +21,15 @@
     box-shadow: 0 1.5rem 4rem rgba($clr-black, 0.15);
 
     &--front {
+      transform-origin: bottom;
       background-color: #fff;
     }
 
     &--back {
       position: absolute;
       inset: 0;
-      transform: rotateY(180deg);
+      transform: rotateX(90deg);
+      transform-origin: top;
 
       &-primary {
         background-image: linear-gradient(to right bottom, $clr-primary-light, $clr-primary-dark);
