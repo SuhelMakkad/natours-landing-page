@@ -26,10 +26,15 @@
     transform: translate(-50%, -50%) scale(0);
     transform-origin: top;
     transition: transform 300ms, opacity 300ms;
+    z-index: 1;
   }
 
   &__left {
     width: 33.32%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   &__right {
@@ -79,5 +84,14 @@
         color: $clr-primary;
       }
     }
+  }
+
+  &__background-close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
   }
 }

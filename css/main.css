@@ -1409,10 +1409,21 @@ body {
   transition: opacity 300ms, -webkit-transform 300ms;
   transition: transform 300ms, opacity 300ms;
   transition: transform 300ms, opacity 300ms, -webkit-transform 300ms;
+  z-index: 1;
 }
 
 .modal__left {
   width: 33.32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
 }
 
 .modal__right {
@@ -1466,6 +1477,15 @@ body {
 
 .modal__close:link:hover, .modal__close:visited:hover {
   color: #55c57a;
+}
+
+.modal__background-close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .section-about {
