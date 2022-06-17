@@ -86,11 +86,28 @@
   &__heading-span {
     padding: 1rem 1.5rem;
     box-decoration-break: clone;
+
     &--1 {
       background-image: linear-gradient(
         to right bottom,
         rgba($clr-secondary-light, 0.85),
         rgba($clr-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-primary-light, 0.85),
+        rgba($clr-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-tertiary-light, 0.85),
+        rgba($clr-tertiary-dark, 0.85)
       );
     }
   }
