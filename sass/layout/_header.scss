@@ -5,7 +5,7 @@
       rgba($clr-primary, 0.8),
       rgba($clr-primary-light, 0.8)
     ),
-    url(/assets/img/hero.jpg);
+    url(../assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
 
@@ -18,7 +18,7 @@
         rgba($clr-primary, 0.8),
         rgba($clr-primary-light, 0.8)
       ),
-      url(/assets/img/hero-small.jpg);
+      url(../assets/img/hero-small.jpg);
   }
 
   &__logo-box {

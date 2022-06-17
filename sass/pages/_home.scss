@@ -15,7 +15,7 @@
       rgba($clr-primary, 0.8),
       rgba($clr-primary-light, 0.8)
     ),
-    url(/assets/img/nat-4.jpg);
+    url(../assets/img/nat-4.jpg);
   background-size: cover;
   margin-top: -10rem;
   transform: skewY(-7deg);
@@ -64,7 +64,7 @@
       rgba($clr-white, 0.9) 50%,
       transparent 50%
     ),
-    url(/assets/img/nat-10.jpg);
+    url(../assets/img/nat-10.jpg);
   background-size: 100%;
   border-radius: 4px;
   box-shadow: 0 1.5rem 4rem rgba($clr-black, 0.2);
@@ -76,13 +76,13 @@
         rgba($clr-white, 0.9) 65%,
         transparent 65%
       ),
-      url(/assets/img/nat-10.jpg);
+      url(../assets/img/nat-10.jpg);
     background-size: cover;
   }
 
   @include respond(md) {
     background-image: linear-gradient(105deg, rgba($clr-white, 0.9) 0%, rgba($clr-white, 0.9) 100%),
-      url(/assets/img/nat-10.jpg);
+      url(../assets/img/nat-10.jpg);
     background-size: cover;
   }
 
