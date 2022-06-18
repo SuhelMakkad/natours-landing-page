@@ -21,6 +21,7 @@
 
   @include respond(sm) {
     transform: skew(0);
+    width: 90%;
 
     & > * {
       transform: skewX(0);

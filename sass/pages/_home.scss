@@ -78,6 +78,7 @@
       ),
       url(../assets/img/nat-10.jpg);
     background-size: cover;
+    margin: 4rem;
   }
 
   @include respond(md) {
