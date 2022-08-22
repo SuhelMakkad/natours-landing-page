@@ -6,5 +6,5 @@
 - 7 in 1 SCSS Architecture
 
 ## Check out 
-[OUTTOURS](https://suhelmakkad.github.io/natours-landing-page/)
+[OUTTOURS](https://suhelmakkad.github.io/outtours-landing-page/)
 
